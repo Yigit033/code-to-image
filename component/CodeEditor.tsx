@@ -26,7 +26,7 @@ interface CodeEdıtorProps {
   currentPadding: string;
 }
 
-function CodeEditor({ onCodeChange, language, theme, icon, background, currentPadding }: CodeEdıtorProps) {
+function CodeEditor({ onCodeChange, language, theme, icon, background = "gray", currentPadding }: CodeEdıtorProps) {
   const [width, setWidth] = useState(1000);
   const [height, setheight] = useState<number | null>(500);
   const [title, setTitle] = React.useState("App");
@@ -64,12 +64,12 @@ function CodeEditor({ onCodeChange, language, theme, icon, background, currentPa
       onResize={HandleResize}
       className="resize-container relative"
       style={{
-        background: "red"
+        background: background
       }}
     >
       <div
         className="code-block"
-        style={{    
+        style={{
           padding: currentPadding
         }}
       >
@@ -103,7 +103,7 @@ function CodeEditor({ onCodeChange, language, theme, icon, background, currentPa
           value="function() {return 'Hello World'}"
           name="UNIQUE_ID_OF_DIV"
           fontSize={16}
-          theme="monokai"
+          theme={theme}
           mode={language.toLocaleLowerCase()}
           showGutter={false}
           wrapEnabled={true}
