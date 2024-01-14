@@ -1,6 +1,6 @@
 "use client";
 
-import { themes } from "@/utils/utilities";
+import { themes } from "@/constants";
 import { ChevronDown } from "lucide-react";
 import { useState } from "react";
 

@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { ChevronDown } from "lucide-react";
-import { backgrounds } from "@/utils/utilities";
+import { backgrounds } from "@/constants";
 
 interface BackgroundSelectorProps {
   background: string;
@@ -44,4 +44,4 @@ function BackgroundSelector({ background, setBackground }: BackgroundSelectorPro
 
 export default BackgroundSelector;
 
-// Buradaki  hatayı çöz ve 1:38 den devam et
+// Buradaki  hatayı çöz ve 1:38 den devam et // Selimin githubunu da referans al

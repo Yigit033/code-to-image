@@ -2,7 +2,7 @@
 
 // selector yapma durumun olduğu zaman buradan faydalan!!
 
-import { languages } from "@/utils/utilities";
+import { languages } from "@/constants";
 import React, { useState } from "react";
 import { ChevronDown } from "lucide-react";
 
